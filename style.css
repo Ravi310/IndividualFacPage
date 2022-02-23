@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -88,13 +89,14 @@ body{
     background: url(water-logo.jpeg) no-repeat  ;
     content: "";
     position: absolute;
-    /* top: 20%; */
-    /* left: 20%; */
+    top: 0%;
+    left: 60%;
     /* transform: translate(-50%,-50%); */
     width: 100%;
     height: 100%;
     z-index: -1;
     opacity: 0.1;
+    background-size: 30%;
 }
 
 .single-faculty__container .single-faculty__intro .grid-container span{
@@ -192,6 +194,16 @@ body{
 }
   }
 
+   @media screen and (max-width: 800px) {
+    .single-faculty__container .single-faculty__intro::before{
+        left: 51%;
+    }
+  }
+
+   /* @media screen and (max-width: 630px) {
+    .single-faculty__container .single-faculty__intro::before{
+        left: 51%;
+    }  */
 
 
 
